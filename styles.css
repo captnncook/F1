@@ -226,6 +226,11 @@ span {
   background: #000;
 }
 
+.media-card-map img {
+  object-fit: contain;
+  background: #111;
+}
+
 .experience-grid {
   margin-bottom: 18px;
 }
