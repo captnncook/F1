@@ -1,0 +1,389 @@
+:root {
+  --bg: #050505;
+  --panel: rgba(17, 17, 17, 0.88);
+  --panel-strong: rgba(10, 10, 10, 0.96);
+  --text: #f5f7fb;
+  --muted: #b8bcc6;
+  --line: rgba(255, 255, 255, 0.08);
+  --red: #ff2a2a;
+  --red-dark: #a60000;
+  --gold: #ffd166;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+  --radius: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Barlow", system-ui, sans-serif;
+  background:
+    radial-gradient(circle at top right, rgba(255, 42, 42, 0.18), transparent 24%),
+    linear-gradient(180deg, #020202 0%, #090909 100%);
+  color: var(--text);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.page-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 48px;
+}
+
+.hero,
+.story-grid,
+.practicals {
+  display: grid;
+  gap: 24px;
+}
+
+.hero {
+  grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.9fr);
+  align-items: stretch;
+  margin-bottom: 28px;
+}
+
+.hero-copy,
+.birthday-card,
+.panel,
+.footer {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.hero-copy {
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-copy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(255, 42, 42, 0.2), transparent 34%),
+    repeating-linear-gradient(
+      -60deg,
+      transparent,
+      transparent 16px,
+      rgba(255, 255, 255, 0.015) 16px,
+      rgba(255, 255, 255, 0.015) 18px
+    );
+  pointer-events: none;
+}
+
+.eyebrow,
+.section-kicker,
+.fact-label,
+.card-number,
+.timeline-day {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.eyebrow,
+.section-kicker {
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "Orbitron", "Barlow", sans-serif;
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  max-width: 11ch;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+}
+
+.hero-intro,
+.panel p,
+.panel li,
+.footer p,
+.footer small,
+figcaption {
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 1.05rem;
+}
+
+.hero-intro {
+  max-width: 62ch;
+  margin: 20px 0 0;
+}
+
+.hero-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.fact-pill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 14px 16px;
+}
+
+.fact-label {
+  display: block;
+  color: #ff9b9b;
+  font-size: 0.72rem;
+  margin-bottom: 6px;
+}
+
+.fact-pill strong {
+  font-size: 1rem;
+}
+
+.birthday-card {
+  background:
+    linear-gradient(180deg, rgba(255, 42, 42, 0.18), rgba(255, 42, 42, 0.02)),
+    var(--panel-strong);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.birthday-number {
+  font-family: "Orbitron", sans-serif;
+  font-size: clamp(4rem, 10vw, 6rem);
+  line-height: 0.9;
+  color: white;
+}
+
+.birthday-text {
+  font-family: "Orbitron", sans-serif;
+  color: var(--red);
+  font-size: 1.5rem;
+  margin-top: 8px;
+}
+
+.birthday-card p {
+  margin: 24px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.panel {
+  padding: 30px;
+}
+
+.story-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.9fr);
+  margin-bottom: 24px;
+}
+
+.verification-card {
+  display: grid;
+  gap: 14px;
+}
+
+.verification-item {
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.verification-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #ff9b9b;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.verification-item strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.numbered-card {
+  position: relative;
+  padding-top: 72px;
+}
+
+.card-number {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ff4747, #d50c0c);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+ul {
+  padding-left: 18px;
+  margin: 14px 0 0;
+}
+
+li + li {
+  margin-top: 10px;
+}
+
+.timeline-section {
+  margin-bottom: 24px;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.timeline-item {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.timeline-day {
+  color: #ff9b9b;
+  display: inline-block;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.practicals {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: start;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.link-grid a {
+  text-decoration: none;
+  color: inherit;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.link-grid a:hover,
+.link-grid a:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(255, 42, 42, 0.55);
+  background: rgba(255, 42, 42, 0.08);
+}
+
+.link-grid strong,
+.link-grid span {
+  display: block;
+}
+
+.link-grid span {
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.footer {
+  margin-top: 24px;
+  padding: 28px 30px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0 0 10px;
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
+  color: white;
+  font-style: italic;
+}
+
+.footer small {
+  display: block;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 960px) {
+  .hero,
+  .story-grid,
+  .practicals,
+  .highlights,
+  .timeline,
+  .hero-facts,
+  .link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy,
+  .panel,
+  .birthday-card,
+  .footer {
+    padding: 24px;
+  }
+
+  h1 {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(100% - 20px, 1180px);
+    padding-top: 20px;
+  }
+
+  .hero-intro,
+  .panel p,
+  .panel li,
+  .footer small {
+    font-size: 1rem;
+  }
+}
