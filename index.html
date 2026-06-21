@@ -6,12 +6,12 @@
     <title>Voor Papa | Formule 1 Weekendcadeau</title>
     <meta
       name="description"
-      content="Een cadeauwebsite voor een volledig verzorgd Formule 1-weekend in Spa-Francorchamps met verblijf in Aken."
+      content="Een mobile-first cadeauwebsite voor een volledig verzorgd Formule 1-weekend in Spa-Francorchamps met verblijf in Aken."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Orbitron:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Orbitron:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -21,13 +21,14 @@
       <header class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Cadeau voor papa</p>
+          <div class="hero-badge">60 jaar</div>
           <h1>Een volledig verzorgd Formule 1-weekend</h1>
           <p class="hero-intro">
-            Voor je 60e verjaardag gaan we samen naar de Formula 1 Moet &amp; Chandon Belgian Grand Prix 2026 op
-            Spa-Francorchamps, met een verblijf in hartje Aken als rustige uitvalsbasis voor het raceweekend.
+            Voor je verjaardag gaan we samen naar de Formula 1 Moet &amp; Chandon Belgian Grand Prix 2026 op
+            Spa-Francorchamps, met een verblijf in Aken als ontspannen uitvalsbasis voor het weekend.
           </p>
 
-          <div class="hero-facts">
+          <div class="hero-facts" aria-label="Kerninformatie">
             <div class="fact-pill">
               <span class="fact-label">Raceweekend</span>
               <strong>17 - 19 juli 2026</strong>
@@ -37,136 +38,135 @@
               <strong>Spa-Francorchamps</strong>
             </div>
             <div class="fact-pill">
-              <span class="fact-label">Verblijf</span>
+              <span class="fact-label">Hotel</span>
               <strong>Aken</strong>
             </div>
           </div>
         </div>
 
-        <aside class="birthday-card">
-          <span class="birthday-number">60</span>
-          <span class="birthday-text">jaar</span>
-          <p>
-            Een weekend vol autosport, sfeer en tijd samen. Alles draait om beleven, niet om haasten.
-          </p>
-        </aside>
+        <div class="hero-media panel">
+          <img
+            src="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000001/common/f1/2026/track/2026trackspafrancorchampsdetailed.webp"
+            alt="Kaart van het circuit van Spa-Francorchamps met zones en toegangen"
+          />
+          <div class="media-caption">
+            <span class="media-kicker">Circuit visual</span>
+            <strong>Spa-Francorchamps</strong>
+            <p>Een iconisch raceweekend op een van de meest legendarische circuits van de kalender.</p>
+          </div>
+        </div>
       </header>
 
       <main>
-        <section class="panel story-grid" aria-labelledby="weekendverhaal">
-          <div>
-            <p class="section-kicker">Het plan</p>
-            <h2 id="weekendverhaal">Een cadeaupagina die het weekend alvast laat beginnen</h2>
-            <p>
-              De kern van het cadeau blijft hetzelfde als op de infographic: samen naar de Belgische Grand Prix, met een
-              verzorgd verblijf in Aken. Voor deze website zijn de praktische details gecontroleerd en aangescherpt, zodat
-              de pagina niet alleen mooi is, maar ook klopt.
-            </p>
-            <p>
-              Spa-Francorchamps blijft het decor van het raceweekend en het hotel ligt inderdaad vlak bij station en
-              centrum, wat Aken een logische en ontspannen basis maakt voor het weekend.
-            </p>
-          </div>
-
-          <div class="verification-card" aria-label="Gecontroleerde details">
-            <div class="verification-item">
-              <span class="verification-label">Race</span>
-              <strong>Belgian Grand Prix 2026</strong>
-              <p>Officieel bevestigd voor 17 - 19 juli 2026 op Spa-Francorchamps.</p>
-            </div>
-            <div class="verification-item">
-              <span class="verification-label">Hotel</span>
-              <strong>a&amp;o Aachen Hauptbahnhof</strong>
-              <p>Adres bevestigd: Hackländerstraße 5, 52064 Aachen.</p>
-            </div>
-            <div class="verification-item">
-              <span class="verification-label">Ligging</span>
-              <strong>Dicht bij station en centrum</strong>
-              <p>Volgens de hotelinformatie beide op ongeveer 0,1 km afstand.</p>
-            </div>
-          </div>
+        <section class="panel intro-panel">
+          <p class="section-kicker">Het plan</p>
+          <h2>Niet alleen een cadeau, maar een weekend om samen te beleven</h2>
+          <p>
+            De site is opgebouwd rond wat ertoe doet: race, verblijf, sfeer en eenvoud. Daarom staat de praktische
+            informatie erin, maar vooral ook het gevoel van het weekend. Minder tekstmuur, meer beeld en ritme.
+          </p>
         </section>
 
-        <section class="highlights" aria-label="Hoogtepunten van het weekend">
-          <article class="panel numbered-card">
+        <section class="media-grid" aria-label="Weekend highlights in beeld">
+          <article class="media-card panel media-card-large">
+            <img
+              src="https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000001/common/f1/2026/track/2026trackspafrancorchampsdetailed.webp"
+              alt="Gedetailleerde circuitkaart van Spa-Francorchamps"
+            />
+            <div class="media-copy">
+              <span class="media-kicker">Race</span>
+              <h3>Spa-Francorchamps in beeld</h3>
+              <p>
+                Het raceweekend is officieel bevestigd voor <strong>17, 18 en 19 juli 2026</strong>. De race zelf is op
+                zondag 19 juli 2026.
+              </p>
+            </div>
+          </article>
+
+          <article class="media-card panel">
+            <img
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+              alt="Hotel exterieur als sfeerbeeld voor het verblijf in Aken"
+            />
+            <div class="media-copy">
+              <span class="media-kicker">Hotel</span>
+              <h3>a&amp;o Aachen Hauptbahnhof</h3>
+              <p>Gelegen aan Hackländerstraße 5, vlak bij station en centrum. Praktisch, centraal en zonder gedoe.</p>
+            </div>
+          </article>
+
+          <article class="media-card panel">
+            <img
+              src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&q=80"
+              alt="Hotelkamer als sfeerbeeld voor het verblijf in Aken"
+            />
+            <div class="media-copy">
+              <span class="media-kicker">Verblijf</span>
+              <h3>Comfort als basis</h3>
+              <p>Een nette, simpele plek om bij te komen tussen de racedagen en samen de stad in te gaan.</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="experience-grid">
+          <article class="panel feature-panel">
             <span class="card-number">1</span>
-            <h3>Spa-Francorchamps</h3>
-            <p>
-              Het legendarische circuit in de Ardennen is bevestigd op de officiële Formule 1-kalender voor
-              <strong>17, 18 en 19 juli 2026</strong>. Het blijft een van de meest iconische banen van de sport.
-            </p>
+            <p class="section-kicker">Circuit</p>
+            <h3>Waarom Spa</h3>
             <ul>
-              <li>Officiële race: zondag 19 juli 2026</li>
               <li>Langste circuit op de huidige F1-kalender: 7.004 km</li>
-              <li>Perfect weekend voor pure racesfeer en mooie herinneringen samen</li>
+              <li>Legendarische secties zoals Eau Rouge, Raidillon en Blanchimont</li>
+              <li>Een raceweekend met echte autosportsfeer</li>
             </ul>
           </article>
 
-          <article class="panel numbered-card">
+          <article class="panel feature-panel">
             <span class="card-number">2</span>
-            <h3>Verblijf in Aken</h3>
-            <p>
-              Het verblijf uit de infographic klopt ook inhoudelijk: <strong>a&amp;o Aachen Hauptbahnhof</strong> bestaat en
-              ligt aan <strong>Hackländerstraße 5, 52064 Aachen</strong>.
-            </p>
+            <p class="section-kicker">Locatie</p>
+            <h3>Waarom Aken</h3>
             <ul>
-              <li>Ongeveer 0,1 km van het centraal station</li>
-              <li>Ongeveer 0,1 km van het stadscentrum volgens de hotelinformatie</li>
-              <li>Handig voor aankomst, overnachting en een ontspannen start van de racedagen</li>
-            </ul>
-          </article>
-
-          <article class="panel numbered-card">
-            <span class="card-number">3</span>
-            <h3>Stad &amp; locatie</h3>
-            <p>
-              Aken is niet alleen praktisch, maar ook een mooie stad om het weekend extra karakter te geven. Daarmee is
-              het meer dan alleen een slaapplek tussen de racedagen door.
-            </p>
-            <ul>
-              <li>Compact centrum om samen te verkennen</li>
-              <li>Goede uitvalsbasis tussen Nederland, Duitsland en Spa</li>
-              <li>Hotel vlak bij station en centrum, dus weinig gedoe met logistiek</li>
+              <li>Hotelinformatie bevestigt circa 0,1 km tot station</li>
+              <li>Ook circa 0,1 km tot het centrum volgens de hotelpagina</li>
+              <li>Goede uitvalsbasis voor een relaxed raceweekend</li>
             </ul>
           </article>
         </section>
 
         <section class="panel timeline-section" aria-labelledby="programma">
           <p class="section-kicker">Weekendindeling</p>
-          <h2 id="programma">Zo kan het raceweekend eruitzien</h2>
+          <h2 id="programma">Zo kan het weekend eruitzien</h2>
           <div class="timeline">
-            <div class="timeline-item">
+            <article class="timeline-item">
               <span class="timeline-day">Vrijdag 17 juli</span>
-              <p>Aankomst, inchecken in Aken en de eerste F1-sessies van het weekend volgen.</p>
-            </div>
-            <div class="timeline-item">
+              <h3>Aankomst</h3>
+              <p>Inchecken in Aken, de eerste F1-sessies volgen en daarna samen de stad in voor een avond in Aken.</p>
+            </article>
+            <article class="timeline-item">
               <span class="timeline-day">Zaterdag 18 juli</span>
-              <p>Kwalificatie, racespanning en tijd om samen het weekend echt te beleven.</p>
-            </div>
-            <div class="timeline-item">
+              <h3>Kwalificatie</h3>
+              <p>Kwalificatie, racespanning en daarna opnieuw Aken in om samen te kijken wat er daar te beleven valt.</p>
+            </article>
+            <article class="timeline-item">
               <span class="timeline-day">Zondag 19 juli</span>
-              <p>Racedag op Spa-Francorchamps: het hoogtepunt van het cadeau.</p>
-            </div>
+              <h3>Racedag</h3>
+              <p>Het hoogtepunt van het cadeau: samen de Grand Prix beleven op Spa.</p>
+            </article>
           </div>
         </section>
 
         <section class="panel practicals" aria-labelledby="praktisch">
-          <div>
+          <div class="practicals-copy">
             <p class="section-kicker">Praktisch</p>
             <h2 id="praktisch">Handige links</h2>
-            <p>
-              Deze pagina gebruikt alleen gecontroleerde kerninformatie. Voor route, hotel en officiële race-info kun je
-              direct door naar de bron.
-            </p>
           </div>
 
           <div class="link-grid">
             <a href="https://www.formula1.com/en/racing/2026/belgium" target="_blank" rel="noreferrer">
               <strong>Officiële F1-pagina</strong>
-              <span>Raceweekend België 2026</span>
+              <span>Belgische Grand Prix 2026</span>
             </a>
             <a href="https://www.aohostels.com/en/aachen/aachen-hauptbahnhof/" target="_blank" rel="noreferrer">
-              <strong>Hotelinformatie</strong>
+              <strong>Hotelpagina</strong>
               <span>a&amp;o Aachen Hauptbahnhof</span>
             </a>
             <a href="https://maps.google.com/?q=Hacklaenderstrasse+5+52064+Aachen" target="_blank" rel="noreferrer">
@@ -179,10 +179,6 @@
 
       <footer class="footer">
         <p>Ik kijk ernaar uit om dit samen met jou te beleven. Gefeliciteerd met je 60e verjaardag.</p>
-        <small>
-          Gecontroleerde bronnen: Formula1.com voor de Belgische Grand Prix 2026 en aohostels.com voor de hotel- en
-          locatiegegevens van a&amp;o Aachen Hauptbahnhof.
-        </small>
       </footer>
     </div>
   </body>
